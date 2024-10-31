@@ -3,9 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="password-display">
+        Generate a password
+        <button class="copy-btn">Copy</button>
+      </div>
+      <div class="options">
+        <div class="option">
+          <label>Password Length</label>
+          <input type="number" id="length" min="4" max="50" value="12" />
+        </div>
+        <div class="option">
+          <label>Include Uppercase</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div class="option">
+          <label>Include Numbers</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div class="option">
+          <label>Include Symbols</label>
+          <input type="checkbox" id="symbols" checked />
+        </div>
+      </div>
+      <button class="generate-btn">Generate Password</button>
+      <div class="strength-meter">
+        <div class="strength-meter-fill"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
